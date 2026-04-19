@@ -1,0 +1,50 @@
+{
+  "ob_rlm_ae": {
+    "rows": 394331,
+    "median_ape_overall": 0.16752288855353256,
+    "median_ape_round_1_no_deals": 0.19693285692276707,
+    "median_ape_round_1_with_deals": 0.19611384563149503,
+    "median_ape_round_ge2_no_deals": 0.14124782114454712,
+    "median_ape_round_ge2_with_deals": 0.12660666127641818
+  },
+  "cemh_global_cep": {
+    "rows": 71246,
+    "median_ape_overall": 0.17749140240124972,
+    "median_ape_round_1_no_deals": NaN,
+    "median_ape_round_1_with_deals": 0.185324817616476,
+    "median_ape_round_ge2_no_deals": NaN,
+    "median_ape_round_ge2_with_deals": 0.16281652949138806
+  },
+  "gbt_cep": {
+    "rows": 394331,
+    "median_ape_overall": 0.1786446241153704,
+    "median_ape_round_1_no_deals": 0.7099573945426386,
+    "median_ape_round_1_with_deals": 0.18286753581539378,
+    "median_ape_round_ge2_no_deals": 0.589496840210796,
+    "median_ape_round_ge2_with_deals": 0.15112999240834746
+  },
+  "gbt_ae": {
+    "rows": 394331,
+    "median_ape_overall": 0.07902351920596011,
+    "median_ape_round_1_no_deals": 0.07750200775150294,
+    "median_ape_round_1_with_deals": 0.07719300223470474,
+    "median_ape_round_ge2_no_deals": 0.08630595444662288,
+    "median_ape_round_ge2_with_deals": 0.0818148461397538
+  },
+  "gbt_cep_within_market_dispersion": {
+    "n_markets": 1986,
+    "n_periods": 5126,
+    "median_within_market_pred_cv": 0.05002999765298349
+  },
+  "lin_data": {
+    "snapshot_rows": 394331,
+    "markets_with_targets": 5795,
+    "rounds_used": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+}

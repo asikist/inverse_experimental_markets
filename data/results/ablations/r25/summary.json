@@ -1,0 +1,34 @@
+{
+  "ob_rlm_ae_r25": {
+    "rows": 323706,
+    "median_ape_overall": 0.14405364864939535,
+    "median_ape_round_1_no_deals": 0.2809754852246817,
+    "median_ape_round_1_with_deals": 0.16412591777119778,
+    "median_ape_round_ge2_no_deals": 0.15444884515489257,
+    "median_ape_round_ge2_with_deals": 0.1359354878385977
+  },
+  "cemh_global_cep_r25": {
+    "rows": 323706,
+    "median_ape_overall": 0.073472212753614,
+    "median_ape_round_1_no_deals": 1.0,
+    "median_ape_round_1_with_deals": 0.0916353757868378,
+    "median_ape_round_ge2_no_deals": 1.0,
+    "median_ape_round_ge2_with_deals": 0.05448683568853435
+  },
+  "gbt_cep_r25": {
+    "rows": 323706,
+    "median_ape_overall": 0.05932295237228377,
+    "median_ape_round_1_no_deals": 0.13469268243947508,
+    "median_ape_round_1_with_deals": 0.07744108295939768,
+    "median_ape_round_ge2_no_deals": 0.09858879333842148,
+    "median_ape_round_ge2_with_deals": 0.0513982409179735
+  },
+  "gbt_ae_r25": {
+    "rows": 323706,
+    "median_ape_overall": 0.10876089296121412,
+    "median_ape_round_1_no_deals": 0.31595167692038933,
+    "median_ape_round_1_with_deals": 0.17242797751005762,
+    "median_ape_round_ge2_no_deals": 0.09760424393727421,
+    "median_ape_round_ge2_with_deals": 0.10038661883526961
+  }
+}

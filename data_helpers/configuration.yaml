@@ -1,0 +1,16 @@
+source_data_pth: '../data/Data.csv'
+columne:
+
+  treatment: 'treatment'
+  game: 'game'
+  round: 'round'
+  time: 'time'
+  id: 'id'
+  side: 'side'
+  valuation: 'valuation'
+  bid: 'bid'
+  realized_price: 'price'
+  match_id: 'match_id'
+  match_time: 'match_time'
+  type: 'type'
+  status: 'status'

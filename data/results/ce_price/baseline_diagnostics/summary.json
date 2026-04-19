@@ -1,0 +1,109 @@
+{
+  "overall_median_ape": {
+    "EMH": 0.542654028436019,
+    "CEMH": 0.5366918396818154,
+    "OB-RLM": 0.10233296784546013,
+    "GBT": 0.09059604379290782,
+    "Treatment-Mean": 0.05105399869078307,
+    "Book-Midpoint": 0.1369811130975056
+  },
+  "treatment_mean_overall_median_ape": 0.05017006802721093,
+  "book_midpoint_overall_median_ape": 0.07407407407407407,
+  "worst_asymmetric_split": {
+    "sample_id": 41,
+    "treatment": "BBLargeCE",
+    "train_mean_ce": 66.75,
+    "test_mean_ce": 114.25,
+    "gap_pct": 71.16104868913858,
+    "treatment_mean_median_ape": 0.4343220338983051,
+    "n_rows": 650
+  },
+  "leave_one_treatment_out_overall_median_ape": 0.07835402114009082,
+  "leave_one_treatment_out_per_treatment": [
+    {
+      "treatment": "BB",
+      "loto_median_ape": 0.02285892096318641,
+      "loto_prediction": 107.91161616161617
+    },
+    {
+      "treatment": "BBLargeCE",
+      "loto_median_ape": 0.19453951016194096,
+      "loto_prediction": 109.139896373057
+    },
+    {
+      "treatment": "BBLimS",
+      "loto_median_ape": 0.10670050848622273,
+      "loto_prediction": 108.45664983164983
+    },
+    {
+      "treatment": "BBMMK",
+      "loto_median_ape": 0.023671861907156085,
+      "loto_prediction": 107.88425925925925
+    },
+    {
+      "treatment": "BBMoreB",
+      "loto_median_ape": 0.14512656444927358,
+      "loto_prediction": 107.28661616161617
+    },
+    {
+      "treatment": "BBMoreRounds",
+      "loto_median_ape": 0.05641704770171002,
+      "loto_prediction": 106.62487360970677
+    },
+    {
+      "treatment": "BBMoreS",
+      "loto_median_ape": 0.07835402114009082,
+      "loto_prediction": 108.37457912457913
+    },
+    {
+      "treatment": "BBRandom",
+      "loto_median_ape": 0.04555138404695924,
+      "loto_prediction": 107.8526936026936
+    },
+    {
+      "treatment": "Full",
+      "loto_median_ape": 0.06661535459532116,
+      "loto_prediction": 107.8059265442404
+    },
+    {
+      "treatment": "FullLargeCE",
+      "loto_median_ape": 0.1040337637361609,
+      "loto_prediction": 107.96393146979261
+    },
+    {
+      "treatment": "FullLimS",
+      "loto_median_ape": 0.10442434549577402,
+      "loto_prediction": 108.23358585858585
+    },
+    {
+      "treatment": "FullMoreB",
+      "loto_median_ape": 0.14573021047124632,
+      "loto_prediction": 107.21085858585859
+    },
+    {
+      "treatment": "FullMoreS",
+      "loto_median_ape": 0.16773922015857498,
+      "loto_prediction": 108.59974747474747
+    },
+    {
+      "treatment": "Other",
+      "loto_median_ape": 0.06854256854256859,
+      "loto_prediction": 107.58333333333333
+    },
+    {
+      "treatment": "Same",
+      "loto_median_ape": 0.0657367324033991,
+      "loto_prediction": 107.9074074074074
+    },
+    {
+      "treatment": "SameMMK",
+      "loto_median_ape": 0.04542969846499333,
+      "loto_prediction": 107.86644407345575
+    }
+  ],
+  "train_test_gap_summary_pct": {
+    "median_abs": 3.511141120864277,
+    "p95_abs": 16.132723112128147,
+    "max_abs": 71.16104868913858
+  }
+}

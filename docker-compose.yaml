@@ -1,0 +1,39 @@
+services:
+  lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: markets-research
+    ports:
+      - 8888:8888
+    command: "uv run jupyter lab --ip '0.0.0.0' --no-browser --NotebookApp.token='${JUPYTER_TOKEN:-}'"
+    volumes:
+      - type: bind
+        source: "."
+        target: /home/researcher/workspace/
+    env_file:
+      - .env
+
+  lab-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+    image: markets-research-gpu
+    ports:
+      - 8888:8888
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: "uv run jupyter lab --ip '0.0.0.0' --no-browser --NotebookApp.token='${JUPYTER_TOKEN:-}'"
+    volumes:
+      - type: bind
+        source: "."
+        target: /home/researcher/workspace/
+    env_file:
+      - .env
+    profiles:
+      - gpu

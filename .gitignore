@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+*.env.local
+
+# Data artifacts
+# Cached intermediates and result feathers ARE tracked (all <50 MB) so reviewers
+# can run analysis scripts without rerunning the numbered preparation scripts.
+# The single regenerable artefact above the threshold is excluded:
+/data/preprocessed/torch/original_dataset/tensor_dataset.safetensors
+/notebooks/files/
+
+# Backup and experimental notebooks
+*-Copy*.ipynb
+Untitled*.ipynb
+/notebooks/backups/
+
+# Research papers (not part of codebase)
+/papers/
+
+# OS
+.DS_Store
+Thumbs.db
+
+#catboost metadata
+catboost_info/
+
+texput.log
+41562_2020_916_MOESM1_ESM.pdf
+
+.venv
