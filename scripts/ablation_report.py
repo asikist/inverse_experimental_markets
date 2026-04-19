@@ -5,7 +5,7 @@ allocative_efficiency}/`` and the ablation feathers from
 ``data/results/ablations/{r25,r26}/``, computes median APE broken down by
 round and price-realisation bucket (the same buckets as Tabs.\\ \\ref{tab:
 ae_ape} and \\ref{tab:cep_ape} in the paper), and writes the LaTeX tables to
-``paper/epj/reproducibility_report/final_tables/``.
+``paper/epj/tables/``.
 
 Run with: ``uv run python scripts/ablation_report.py``.
 """
@@ -24,7 +24,7 @@ REPO_ROOT = CODE_ROOT.parent
 CE_DIR = CODE_ROOT / "data" / "results" / "ce_price"
 AE_DIR = CODE_ROOT / "data" / "results" / "allocative_efficiency"
 ABL = CODE_ROOT / "data" / "results" / "ablations"
-FINAL = REPO_ROOT / "paper" / "epj" / "reproducibility_report" / "final_tables"
+FINAL = REPO_ROOT / "paper" / "epj" / "tables"
 
 
 def add_buckets(df: pd.DataFrame) -> pd.DataFrame:

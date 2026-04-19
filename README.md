@@ -16,7 +16,7 @@ The pipeline has three layers:
    CEP baselines appendix, the session-clustered Wilcoxon tests, and the
    external-dataset evaluation on Lin et al. 2020.
 3. **Reporting** — scripts that read the result `.ft` files, write the LaTeX
-   tables under `paper/epj/reproducibility_report/final_tables/`, and copy
+   tables under `paper/epj/tables/`, and copy
    PDFs into `paper/epj/figures/`.
 
 The main-text bar charts and the four model-fit notebooks live in
@@ -306,8 +306,8 @@ uv run python scripts/cep_baselines_report.py     # writes diagnostics + LaTeX
 - Reads (report): the four paper model results plus the two baseline files.
 - Writes (report):
   - `data/results/ce_price/baseline_diagnostics/{trainset_vs_testset_ce_gap.csv,loto_median_ape.csv,summary.json}`
-  - `paper/epj/reproducibility_report/final_tables/tab_cep_baseline_comparison.tex`
-  - `paper/epj/reproducibility_report/final_tables/tab_cep_baseline_brittleness.tex`
+  - `paper/epj/tables/tab_cep_baseline_comparison.tex`
+  - `paper/epj/tables/tab_cep_baseline_brittleness.tex`
 - Cost: ~3 min total.
 
 ### Session-clustered Wilcoxon
@@ -321,7 +321,7 @@ uv run python scripts/wilcoxon_clustered_tables.py     # ~5 s; pure Python
 - Writes:
   - `data/results/wilcoxon_clustered/{ae,ce}_results.ft`
   - `data/results/wilcoxon_clustered/diagnostics.json`
-  - `paper/epj/reproducibility_report/final_tables/tab_{ae,cep}_ape_wilcoxon_clustered.tex`
+  - `paper/epj/tables/tab_{ae,cep}_ape_wilcoxon_clustered.tex`
 
 Two test variants per pair, per bucket: Rosner-Glynn-Lee clustered
 signed-rank (via the R `clusrank` package; install with
@@ -345,7 +345,7 @@ uv run python scripts/lin_cep_diagnostic.py      # spread-driven cold-start diag
   the Ikica feature matrix.
 - Writes (diagnostic):
   - `data/results/lin_eval/diagnostic/{spread_summary.json,ape_by_spread.csv}`
-  - `paper/epj/reproducibility_report/final_tables/tab_lin_cep_spread.tex`
+  - `paper/epj/tables/tab_lin_cep_spread.tex`
   - `paper/epj/figures/diagnostics/lin_cs_spread_diagnostic.pdf`
 - Cost: ~20 min (eval) + ~30 s (diagnostic).
 
@@ -368,9 +368,9 @@ uv run python scripts/regenerate_bar_charts.py
 
 `paper_artifacts.py` produces:
 
-- `paper/epj/reproducibility_report/final_tables/tab_{ae,cep}_ape.tex` —
+- `paper/epj/tables/tab_{ae,cep}_ape.tex` —
   the four-bucket median APE tables (paper Tabs.\\ 3 and 5).
-- `paper/epj/reproducibility_report/final_tables/tab_{ae,cep}_ape_wilcoxon.tex`
+- `paper/epj/tables/tab_{ae,cep}_ape_wilcoxon.tex`
   — the unclustered pairwise Wilcoxon tables.
 - `paper/epj/reproducibility_report/latex_staging/{ae,ce}/` — the raw
   `.to_latex()` tables and pickle-cached pivots, kept for line-by-line
@@ -390,7 +390,7 @@ uv run python scripts/ablation_report.py
 ```
 
 Produces `tab_ablation_r25.tex` and `tab_ablation_r26.tex` in
-`paper/epj/reproducibility_report/final_tables/`.
+`paper/epj/tables/`.
 
 ### Diagnostics, Voronoi, deal-counts
 
@@ -593,7 +593,7 @@ done
 ```
 
 Each analysis script's headline numbers are cross-checked against the
-LaTeX tables under `paper/epj/reproducibility_report/final_tables/`
+LaTeX tables under `paper/epj/tables/`
 (e.g., `tab_cep_baseline_comparison.tex` for the CEP baselines and
 `tab_cep_baseline_brittleness.tex` for the LOTO brittleness row that
 ties the CEP baselines back to the leave-one-treatment-out CV).

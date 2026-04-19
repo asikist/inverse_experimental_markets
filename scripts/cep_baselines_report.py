@@ -12,7 +12,7 @@ by ``scripts/cep_baselines.py`` and writes:
       summary.json                     -- headline numbers used in the paper
                                           text (overall medians, brittleness).
 
-  paper/epj/reproducibility_report/final_tables/
+  paper/epj/tables/
       tab_cep_baseline_comparison.tex  -- 6 rows (EMH / CEMH / OB-RLM / GBT /
                                           treatment_mean / book_midpoint)
                                           x 4 buckets (Round in {1, 2+} x
@@ -41,7 +41,7 @@ REPO_ROOT = CODE_ROOT.parent
 PREP = CODE_ROOT / "data" / "preprocessed"
 CE_DIR = CODE_ROOT / "data" / "results" / "ce_price"
 DIAG_DIR = CE_DIR / "baseline_diagnostics"
-FINAL_TABLES = REPO_ROOT / "paper" / "epj" / "reproducibility_report" / "final_tables"
+FINAL_TABLES = REPO_ROOT / "paper" / "epj" / "tables"
 
 MODELS = [
     ("EMH",            "emh.ft"),

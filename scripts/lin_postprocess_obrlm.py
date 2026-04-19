@@ -4,8 +4,8 @@ Run this *after* ``lin_eval.py``, ``lin_cep_diagnostic.py`` and
 ``lin_obrlm_cep_check.py``. It consumes the persisted .ft files and rewrites
 the three final artefacts referenced by ``response.tex``:
 
-  paper/epj/reproducibility_report/final_tables/tab_lin_external.tex
-  paper/epj/reproducibility_report/final_tables/tab_lin_cep_spread.tex
+  paper/epj/tables/tab_lin_external.tex
+  paper/epj/tables/tab_lin_cep_spread.tex
   paper/epj/figures/diagnostics/lin_cs_spread_diagnostic.pdf
 
 so the OB-RLM (CEP) row / column / panel appears alongside GBT (CEP).
@@ -31,7 +31,7 @@ OBRLM = RES / "lin_obrlm_cep_check"
 MAIN_CEP = RES / "ce_price"
 
 PAPER_ROOT = CODE_ROOT.parent / "paper" / "epj"
-TAB_DIR = PAPER_ROOT / "reproducibility_report" / "final_tables"
+TAB_DIR = PAPER_ROOT / "tables"
 FIG_DIR = PAPER_ROOT / "figures" / "diagnostics"
 
 SPREAD_BANDS = [

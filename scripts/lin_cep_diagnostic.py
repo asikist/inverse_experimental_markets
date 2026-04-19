@@ -17,7 +17,7 @@ The 22 quantile features are all that the orderbook-only models see.
 Outputs:
   code/data/results/lin_eval/diagnostic/spread_summary.json
   code/data/results/lin_eval/diagnostic/ape_by_spread.csv
-  paper/epj/reproducibility_report/final_tables/tab_lin_cep_spread.tex
+  paper/epj/tables/tab_lin_cep_spread.tex
   paper/epj/figures/diagnostics/lin_cs_spread_cdf.pdf
   paper/epj/figures/diagnostics/lin_cs_ape_vs_spread.pdf
 
@@ -40,7 +40,7 @@ DIAG_OUT = LIN_OUT / "diagnostic"
 DIAG_OUT.mkdir(parents=True, exist_ok=True)
 
 PAPER_ROOT = CODE_ROOT.parent / "paper" / "epj"
-TAB_OUT = PAPER_ROOT / "reproducibility_report" / "final_tables" / "tab_lin_cep_spread.tex"
+TAB_OUT = PAPER_ROOT / "tables" / "tab_lin_cep_spread.tex"
 FIG_DIR = PAPER_ROOT / "figures" / "diagnostics"
 
 DYNAMIC_TREATMENTS = ("FullSShift", "FullFromBtoS", "FullFromStoB")
