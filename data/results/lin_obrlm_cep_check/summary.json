@@ -1,0 +1,18 @@
+{
+  "lin": {
+    "rows": 394331,
+    "median_ape_overall": 0.18196837923957876,
+    "median_ape_round_1_no_deals": 0.5454832537786675,
+    "median_ape_round_1_with_deals": 0.18906793705302033,
+    "median_ape_round_ge2_no_deals": 0.4529110855651132,
+    "median_ape_round_ge2_with_deals": 0.1547671008369022
+  },
+  "ikica_in_sample": {
+    "rows": 21966,
+    "median_ape_overall": 0.052016965129673916,
+    "median_ape_round_1_no_deals": 0.22390563598868374,
+    "median_ape_round_1_with_deals": 0.08052726436300582,
+    "median_ape_round_ge2_no_deals": 0.10613363065465782,
+    "median_ape_round_ge2_with_deals": 0.042063475378459066
+  }
+}
